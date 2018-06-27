@@ -1,7 +1,7 @@
 const express = require('express');
 const hbs = require('hbs');
 var app = express();
-
+var path = require('path');
 const port = process.env.PORT || 3000;
 
 app.set('view engine','hbs');
@@ -26,12 +26,13 @@ app.get('/json',(req,res) => {
 });
 
 app.get('/help',(req,res) => {
-    res.send(app.use(express.static(__dirname + '/public/help.html')));
+    //res.send(app.use(express.static(__dirname + '/public/help.html')));
+    res.sendFile(path.join(__dirname + '/public/help.html'));
 });
 
 app.get('/render',(req,res) => {
     res.render('render.hbs',{
         title: "Render ExampleSSSS",
-        detail:"Render Detail"
+        detail:"Render Detailssss"
     })
 });
