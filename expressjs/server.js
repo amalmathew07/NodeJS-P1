@@ -31,7 +31,7 @@ app.get('/help',(req,res) => {
 
 app.get('/render',(req,res) => {
     res.render('render.hbs',{
-        title: "Render Example",
+        title: "Render ExampleSSSS",
         detail:"Render Detail"
     })
 });
