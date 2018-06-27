@@ -1,0 +1,5 @@
+Json Output: 
+"Amal"
+26Json Output: 
+Name: "Akhil"
+Age: 24
